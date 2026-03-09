@@ -42,26 +42,15 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Form submission animation (placeholder)
+    // Form submission animation
     const form = document.querySelector('.contact-form');
     if (form) {
         form.addEventListener('submit', (e) => {
-            e.preventDefault();
+            // No preventDefault to allow standard HTML submission to FormSubmit.co
             const btn = form.querySelector('button');
             const originalText = btn.innerText;
             btn.innerText = 'Enviando...';
             btn.disabled = true;
-            
-            setTimeout(() => {
-                btn.innerText = '¡Solicitud Enviada!';
-                btn.style.background = 'var(--accent-secondary)';
-                form.reset();
-                setTimeout(() => {
-                    btn.innerText = originalText;
-                    btn.style.background = '';
-                    btn.disabled = false;
-                }, 3000);
-            }, 1500);
         });
     }
 });
