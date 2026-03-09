@@ -142,11 +142,16 @@
                     <h2>Transforma Tu Negocio Hoy.</h2>
                     <p>Agenda una consultoría inicial sin costo.</p>
                 </div>
-                <form class="contact-form reveal">
-                    <input type="text" placeholder="Nombre" required>
-                    <input type="email" placeholder="Email" required>
-                    <input type="tel" placeholder="WhatsApp" required>
-                    <button type="submit" class="btn btn-primary">SOLICITAR DEMO</button>
+                <form action="https://formsubmit.co/dariobritoc9@gmail.com" method="POST" class="contact-form reveal">
+                    <!-- FormSubmit Configuration -->
+                    <input type="hidden" name="_subject" value="Nuevo contacto de Aura IA">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="false">
+                    
+                    <input type="text" name="nombre" placeholder="Nombre" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="tel" name="whatsapp" placeholder="WhatsApp" required>
+                    <button type="submit" class="btn btn-primary">SOLICITA ASESORAMIENTO</button>
                 </form>
             </div>
         </section>
