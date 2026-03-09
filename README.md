@@ -27,4 +27,4 @@ L-- hero.png        # Imagen hero generada por IA
 2. 2. Abre index.html en tu navegador favorito.
   
    3. ---
-   4. Desarrollado para potenciar la digitalizacion de peque
+   4. Desarrollado para potenciar la digitalizacion de pequeñas empresas
